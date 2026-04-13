@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Sahibinden Ozetleyici",
+  "version": "1.0.0",
+  "description": "Sahibinden.com ilanlarini otomatik ozetler ve JSON olarak indirir.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*",
+    "https://www.sahibinden.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Sahibinden Ozetleyici"
+  },
+  "icons": {}
+}
